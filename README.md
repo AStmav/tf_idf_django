@@ -19,7 +19,7 @@
 2. Перейти в каталог проекта:
 
     ```bash
-    cd your_repository
+    cd tf_idf_django
     ```
 
 3. Установить зависимости:
