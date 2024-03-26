@@ -105,7 +105,7 @@ def result_view(request):
     """
 
     # Получение 50 слов с наибольшим TF
-    sorted_keywords = Words.objects.all().order_by('-tf')[:50]
+    sorted_keywords = Words.objects.all().order_by('-idf')[:50]
     return render(request, 'ti_idf/result.html', {'keywords': sorted_keywords})
 
 # Create your views here.
