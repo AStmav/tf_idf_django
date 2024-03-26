@@ -1,0 +1,9 @@
+TF-IDF, short for term frequency–inverse document frequency, is a numerical statistic that reflects how important a word is to a document in a collection or corpus. It is often used as a weighting factor in information retrieval and text mining. The tf-idf value increases proportionally to the number of times a word appears in the document and is offset by the frequency of the word in the corpus, which helps to adjust for the fact that some words appear more frequently in general.
+
+TF-IDF is one of the most popular term-weighting schemes today. It was introduced as an improvement over the simple term frequency (tf) metric, which counts the number of occurrences of a word in a document without considering its importance. TF-IDF aims to capture the significance of a word by considering both its frequency in the document and its rarity in the corpus.
+
+The tf-idf formula is a product of two terms: the term frequency (tf) and the inverse document frequency (idf). The term frequency measures how often a word appears in a document, while the inverse document frequency measures how common or rare a word is across all documents in the corpus.
+
+To calculate the tf-idf score for a word in a document, you multiply its term frequency (tf) by its inverse document frequency (idf). This results in a higher score for words that are frequent in the document but rare in the corpus, indicating their importance or relevance to the document.
+
+In practice, tf-idf is used in various applications such as text classification, information retrieval, and keyword extraction. It helps to identify important keywords in a document, distinguish between relevant and irrelevant information, and improve the accuracy of search results.

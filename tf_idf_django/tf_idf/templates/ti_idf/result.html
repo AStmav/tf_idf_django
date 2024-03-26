@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TF-IDF результат</title>
+</head>
+<body>
+    <h2>TF-IDF результат</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Word</th>
+                <th>TF</th>
+                <th>IDF</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for keyword in keywords %}
+            <tr>
+                <td>{{ keyword.word }}</td>
+                <td>{{ keyword.tf }}</td>
+                <td>{{ keyword.idf }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
